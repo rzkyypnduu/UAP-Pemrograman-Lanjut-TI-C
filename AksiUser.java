@@ -86,7 +86,7 @@ public class AksiUser extends Aksi {
             System.out.println("Kamu belum pernah melakukan pemesanan.");
         } else {
             for (Pesanan p : pesanan.values()) {
-                System.out.println("Film: " + p.getFilm().getName() + " - Jumlah: " + p.getKuantitas() + " - Total Harga: " + (p.getKuantitas() * p.getFilm().getPrice()));
+                System.out.println("Film: " + p.getFilm().getName() + " - Jumlah: " + p.getKuantitas() + " - Total Harga: " + (int)(p.getKuantitas() * p.getFilm().getPrice()));
             }
         }
     }
