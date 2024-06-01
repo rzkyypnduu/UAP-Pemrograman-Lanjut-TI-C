@@ -62,6 +62,10 @@ public class AksiUser extends Aksi {
         User currentUser = Akun.getCurrentUser();
 
         if (totalHarga > currentUser.getSaldo()) {
+            System.out.println("Nama Film yang ingin dipesan: " + film.getName());
+            System.out.println("Jumlah tiket yang ingin dipesan: " + kuantitas);
+            System.out.println("Harga satuan tiket " + (int) film.getPrice());
+            System.out.println("Total harga " + (int) totalHarga);
             System.out.println("Saldo tidak mencukupi, saldo yang dimiliki " + (int) currentUser.getSaldo() + ".");
             return;
         }
