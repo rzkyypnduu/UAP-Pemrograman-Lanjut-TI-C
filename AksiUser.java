@@ -29,13 +29,13 @@ public class AksiUser extends Aksi {
     public void lihatListFilm() {
         // Implementasi melihat list film
         for (Film film : Film.getFilms().values()) {
-            System.out.println("Film: " + film.getName() + " - Deskripsi: " + film.getDescription() + " - Harga: " + film.getPrice() + " - Stok: " + film.getStock());
+            System.out.println("Film: " + film.getName() + " - Deskripsi: " + film.getDescription() + " - Harga: " + (int)film.getPrice() + " - Stok: " + film.getStock());
         }
     }
 
     public void lihatSaldo() {
         // Implementasi lihat Saldo
-        System.out.println("Saldo anda: " + Akun.getCurrentUser().getSaldo());
+        System.out.println("Saldo anda: " + (int)Akun.getCurrentUser().getSaldo());
     }
 
     public void pesanFilm() {
